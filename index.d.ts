@@ -407,6 +407,7 @@ declare namespace WAWebJS {
         }>;
         getAuthEventPayload: () => Promise<any>;
         afterAuthReady: () => Promise<void>;
+        storeRemoteSession: (options: { emit: boolean }) => Promise<void>;
         disconnect: () => Promise<void>;
         destroy: () => Promise<void>;
         logout: () => Promise<void>;
